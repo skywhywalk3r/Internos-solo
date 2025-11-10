@@ -1,4 +1,3 @@
-/* === RESET === */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -31,7 +30,6 @@ h4 {
 	color: #292f36;
 }
 
-/* === HEADER === */
 .site-header {
 	padding: 20px 0;
 	border-bottom: 1px solid #eee;
@@ -70,7 +68,6 @@ h4 {
 	color: #cda274;
 }
 
-/* === HERO === */
 .hero {
 	height: 90vh;
 	background: url('./images/room.webp') center/cover no-repeat;
@@ -108,7 +105,6 @@ h4 {
 	margin-bottom: 30px;
 }
 
-/* === BUTTONS === */
 .btn-get-started {
 	display: inline-flex;
 	align-items: center;
@@ -135,10 +131,26 @@ h4 {
 .btn-get-started:hover .arrow {
 	transform: translateX(6px);
 }
+.btn-secondary {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background-color: #292f36;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 16px 36px;
+	border-radius: 30px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+	background-color: #cda274;
+	transform: none;
+}
 
-/* === SERVICES === */
 .services {
-	margin: 100px 0;
+	margin: 100px auto;
 }
 
 .services-row {
@@ -179,7 +191,6 @@ h4 {
 	color: #cda274;
 }
 
-/* === ABOUT === */
 .about {
 	margin: 100px 0;
 }
@@ -204,8 +215,9 @@ h4 {
 
 .contact-box {
 	display: flex;
-	gap: 30px;
-	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	align-items: flex-start;
 	margin-bottom: 40px;
 }
 
@@ -239,7 +251,6 @@ h4 {
 	border-radius: 20px;
 }
 
-/* === CLIENT LOGOS === */
 .client-logos {
 	display: flex;
 	justify-content: center;
@@ -260,7 +271,7 @@ h4 {
 	filter: grayscale(0%);
 	opacity: 1;
 	transform: translateY(-4px);
-} /* === RECENT PROJECTS === */
+}
 .projects {
 	padding: 90px 0;
 	text-align: center;
@@ -344,7 +355,6 @@ h4 {
 	color: #fff;
 }
 
-/* === TESTIMONIALS === */
 .testimonials {
 	background-color: #f4f0ec;
 	padding: 100px 0;
@@ -354,6 +364,7 @@ h4 {
 .testimonials h3 {
 	font-size: 40px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 .test-cards {
@@ -361,6 +372,8 @@ h4 {
 	justify-content: center;
 	gap: 40px;
 	flex-wrap: wrap;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 .test-card {
@@ -369,7 +382,7 @@ h4 {
 	padding: 40px;
 	max-width: 340px;
 	text-align: left;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	box-shadow: none;
 }
 
 .test-card img {
@@ -383,6 +396,7 @@ h4 {
 	font-family: 'Playfair Display', serif;
 	font-size: 18px;
 	margin-bottom: 4px;
+	text-align: left;
 }
 
 .test-card small {
@@ -396,26 +410,19 @@ h4 {
 	font-size: 15px;
 }
 
-/* === CLIENT LOGOS === */
 .client-logos {
 	display: flex;
 	justify-content: center;
-	/* Центрирует по горизонтали */
 	align-items: center;
 	gap: 48px;
-	/* Расстояние между логотипами */
 	padding: 40px 0 10px;
 	flex-wrap: wrap;
-	/* Разрешает перенос на новую строку при уменьшении экрана */
 }
 
 .client-logos img {
 	max-height: 40px;
-	/* Ограничение высоты логотипов */
-	/* ... остальные стили ... */
 }
 
-/* === STATS === */
 .stats {
 	background-color: #f4f0ec;
 	padding: 80px 0;
@@ -445,7 +452,6 @@ h4 {
 	font-weight: 500;
 }
 
-/* === BLOGS === */
 .blogs {
 	margin: 100px auto;
 	text-align: center;
@@ -522,7 +528,6 @@ h4 {
 	font-size: 18px;
 }
 
-/* === CTA === */
 .cta {
 	background-color: #292f36;
 	color: #fff;
@@ -559,7 +564,6 @@ h4 {
 	color: #292f36;
 }
 
-/* === FOOTER === */
 .site-footer {
 	background: #f4f0ec;
 	padding: 80px 0 30px;
@@ -634,7 +638,6 @@ h4 {
 	padding-top: 20px;
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 992px) {
 	.about-grid {
 		grid-template-columns: 1fr;
